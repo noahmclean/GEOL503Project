@@ -1,0 +1,20 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+# My first Title
+
+Some text here.
+
+## Now a subheading
+
+Here's how to do some multiplication.
+
+```{r}
+x <- 3
+y <- 5
+z <- x * y
+```
+
+With some more text.

@@ -1,0 +1,34 @@
+---
+title: "GEOL 503 Homework Problem Set 5: Fibonacci"
+date: "March 27, 2024"
+author: "Your Name Here"
+output: 
+    html_document:
+        mathjax: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+---
+
+
+## Hjulstrom Curve
+
+ The Hjulström curve (two curves, really) is a diagram used in understanding how sediment and/or waste behaves in moving water.  These are important processes to understand whether you're a geologist studying how sediments move and sedimentary rocks form or an environmental scientist understanding how solid waste moves through a contaminated site.  
+
+The log-log plot shows flow speed (usually expressed in cm/s) plotted against grain size (diameter, usually expressed in mm). Two curves divide the space into "Erosion", "Transport", and "Deposition" fields.  In the version above, grain size of 1 mm (a coarse sand) in a flow speed of 100 cm/s is in the erosion field, which means that 100 cm/s is fast enough to erode coarse sand.  However, a flow speed of 10 cm/s is only enough to transport a coarse sand, and that 1 mm-diameter grain would settle out and deposit in a flow speed of just 1 cm/s.
+The two curves are determined empirically and represent some simplifications. For instance, their location can vary depending on parameters like inter-grain cohesion, and the transport/deposition curve is based on settling velocity, even though deposition is more complicated than just grain settling.  One empirical calibration for the two curves is
+
+
+
+Upper curve:
+$$
+u_{cr} = 100 \bigg[ 2.8 \cdot \sqrt{\rho' g\,d\times10^{-3}}+5.25\cdot \frac{\nu}{d\times10^{-3}} \bigg]
+$$
+Lower curve:
+$$
+w = 100 \Bigg[ \sqrt{\Big(13.95\frac{\nu}{d\times10^{-3}}\Big)^2 + 1.09\rho'g\,d\times10^{-3}} -13.95\frac{\nu}{d\times10^{-3}} \Bigg]
+$$
+
+
+```{r}
+
+```
+
+
